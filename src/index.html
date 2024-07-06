@@ -24,7 +24,7 @@
 <body>
     <main>
         <header class="text-zinc-100">
-            <nav class="sticky flex top-0 bg-gradient-to-r from-rose-500 to-pink-500">
+            <nav class="sticky flex z-10 top-0 bg-gradient-to-r from-rose-500 to-pink-500">
                 <div class="flex items-center p-2 gap-2">
                     <img src="./assets/images/logo-inverted.png" width="50">
                     <div class="font-bold text-2xl">
@@ -113,9 +113,11 @@
                             <div class="bg-pink-500 w-14 h-14 rounded-full flex items-center justify-center gap-1">
                                 <div class="h-2 w-1 bg-pink-300 rounded-full animate-wavey"></div>
                                 <div class="h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-200"></div>
-                                <div class="h-4 w-1 bg-pink-100 rounded-full animate-wavey animation-delay-[150ms]"></div>
+                                <div class="h-4 w-1 bg-pink-100 rounded-full animate-wavey animation-delay-[150ms]">
+                                </div>
                                 <div class="h-3 w-1 bg-pink-200 rounded-full animate-wavey animation-delay-300"></div>
-                                <div class="h-2 w-1 bg-pink-300 rounded-full animate-wavey animation-delay-[75px]"></div>
+                                <div class="h-2 w-1 bg-pink-300 rounded-full animate-wavey animation-delay-[75px]">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -129,14 +131,77 @@
                 </div>
 
                 <form class="mt-3 flex gap-2">
-                    <input type="email" placeholder="Email" class="rounded-sm border border-white/40 bg-white/30 backdrop-blur-md p-2 font-bold text-sky-900 placeholder-zinc-500 caret-pink-500 outline-pink-500 focus:outline">
+                    <input type="email" placeholder="Email"
+                        class="rounded-sm border border-white/40 bg-white/30 backdrop-blur-md p-2 font-bold text-sky-900 placeholder-zinc-500 caret-pink-500 outline-pink-500 focus:outline">
                     <button type="submit"
-                    class="corsor-pointer rounded-sm bg-pink-500 py-2 px-4 font-bold transition-colors hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20">
+                        class="corsor-pointer rounded-sm bg-pink-500 py-2 px-4 font-bold transition-colors hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20">
                         Subscribe
                     </button>
                 </form>
             </div>
         </header>
+
+        <div class="max-w-screen-lg mx-auto mt-20">
+            <h2>
+                Headliners
+            </h2>
+            <p>
+                Experience the sonic delight from these made-up artists across 7 days
+                that music fans are calling “one of the many gigs that will happen
+                this year”
+            </p>
+
+            <div class="mt-4 flex w-full gap-4 pb-5 snap-x overflow-auto">
+                <div class="min-w-[80%] md:min-w-[40%]">
+                    <div style="background-image: url('./assets/images/band1.jpg');"
+                        class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+                    <h5 class="mt-2">Corduroy Gary</h5>
+                    <h6>1st July 9pm - Main Stage</h6>
+                </div>
+
+                <div class="min-w-[80%] md:min-w-[40%]">
+                    <div style="background-image: url('./assets/images/band2.jpg');"
+                        class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+                    <h5 class="mt-2">Dave's showing off again</h5>
+                    <h6>2nd July 9pm - Main Stage</h6>
+                </div>
+
+                <div class="min-w-[80%] md:min-w-[40%]">
+                    <div style="background-image: url('./assets/images/band3.jpg');"
+                        class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+                    <h5 class="mt-2">Sarah can't have dairy</h5>
+                    <h6>3rd July 9pm - Main Stage</h6>
+                </div>
+
+                <div class="min-w-[80%] md:min-w-[40%]">
+                    <div style="background-image: url('./assets/images/band4.jpg');"
+                        class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+                    <h5 class="mt-2">Corduroy Gary</h5>
+                    <h6>1st July 9pm - Main Stage</h6>
+                </div>
+
+                <div class="min-w-[80%] md:min-w-[40%]">
+                    <div style="background-image: url('./assets/images/band5.jpg');"
+                        class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+                    <h5 class="mt-2">Corduroy Gary</h5>
+                    <h6>1st July 9pm - Main Stage</h6>
+                </div>
+
+                <div class="min-w-[80%] md:min-w-[40%]">
+                    <div style="background-image: url('./assets/images/band6.jpg');"
+                        class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+                    <h5 class="mt-2">Corduroy Gary</h5>
+                    <h6>1st July 9pm - Main Stage</h6>
+                </div>
+
+                <div class="min-w-[80%] md:min-w-[40%]">
+                    <div style="background-image: url('./assets/images/band7.jpg');"
+                        class="h-80 w-full snap-center rounded-xl bg-cover bg-center shadow-md shadow-black/20"></div>
+                    <h5 class="mt-2">Corduroy Gary</h5>
+                    <h6>1st July 9pm - Main Stage</h6>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 
